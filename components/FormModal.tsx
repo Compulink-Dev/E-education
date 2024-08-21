@@ -80,9 +80,11 @@ const FormModal = ({
         className={`${size} flex items-center justify-center rounded-full ${bgColor}`}
         onClick={() => setOpen(true)}
       >{
-          type === "delete" ? <Trash width={14} height={14} className="text-white" /> : (
-            type === "create" ? <Plus width={14} height={14} /> : <Eye width={14} height={14} />
-          )
+          type === "create" ? <Plus width={14} height={14} className="text-black" />
+            : (
+              type === "update" ? <Eye width={14} height={14} className="text-black" color="black" />
+                : <Trash width={14} height={14} className="text-white" />
+            )
         }
         {/* <Image src={`/${type}.png`} alt="" width={16} height={16} /> */}
       </button>
