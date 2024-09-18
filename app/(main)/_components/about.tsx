@@ -23,7 +23,7 @@ const Card = () => {
             </div>
             <p className="text-blue-500 font-extrabold text-2xl">Clean Environment</p>
             <div className="">
-                <p className="text-center text-slate-500">This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</p>
+                <p className="text-center text-slate-500">{"This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?"}</p>
             </div>
         </div>
     )
@@ -59,7 +59,7 @@ function About() {
                         src={'/exp.mp4'} width={300} height={300} className='w-full rounded' />
                     <div className="">
                         <p className="">
-                            E-education, or electronic education, uses digital technologies to facilitate teaching and learning processes. This approach encompasses various elements such as online classes, digital learning materials, and digital learning management systems, enhancing education’s accessibility and flexibility.
+                            {"E-education, or electronic education, uses digital technologies to facilitate teaching and learning processes. This approach encompasses various elements such as online classes, digital learning materials, and digital learning management systems, enhancing education’s accessibility and flexibility."}
                         </p>
                         <div className="flex flex-col gap-4 items-start mt-4 ">
                             <div className="flex flex-row md:flex-row gap-2">

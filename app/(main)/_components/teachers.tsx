@@ -31,7 +31,7 @@ const TeacherCard = () => {
             <div className="">
                 <p className="">Mr Moyo</p>
                 <p className="">Grade 1 & 2</p>
-                <p className="">Bachelor's in Early Learning Education</p>
+                <p className="">{"Bachelor's in Early Learning Education"}</p>
                 <div className="">
                     Skills
                 </div>
