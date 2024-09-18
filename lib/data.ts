@@ -921,14 +921,14 @@ export const calendarEvents = [
     {
         title: "Math",
         allDay: false,
-        start: new Date(2024, 7, 12, 8, 0),
-        end: new Date(2024, 7, 12, 8, 45),
+        start: new Date(2024, 8, 27, 8, 0),
+        end: new Date(2024, 8, 29, 8, 45),
     },
     {
         title: "English",
         allDay: false,
-        start: new Date(2024, 7, 12, 9, 0),
-        end: new Date(2024, 7, 12, 9, 45),
+        start: new Date(2024, 8, 28, 9, 0),
+        end: new Date(2024, 8, 29, 9, 45),
     },
     {
         title: "Biology",

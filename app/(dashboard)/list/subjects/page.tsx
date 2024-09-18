@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FormModal from "../../../../components/FormModal";
 import Pagination from "../../../../components/Pagination";
 import Table from "../../../../components/Table";
@@ -39,7 +40,12 @@ const SubjectListPage = () => {
                 <div className="flex items-center gap-2">
                     {role === "admin" && (
                         <>
-                            <FormModal table="subject" type="update" data={item} />
+                            {/* <FormModal table="subject" type="update" data={item} /> */}
+                            <Link href={`/list/subjects/${item.id}`}>
+                                <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
+                                    <Image src="/view.png" alt="" width={16} height={16} />
+                                </button>
+                            </Link>
                             <FormModal table="subject" type="delete" id={item.id} />
                         </>
                     )}
