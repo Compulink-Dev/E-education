@@ -29,9 +29,9 @@ const TeacherCard = () => {
                 </div>
             </div>
             <div className="">
-                <p className="">Name</p>
-                <p className="">Class</p>
-                <p className="">Description</p>
+                <p className="">Mr Moyo</p>
+                <p className="">Grade 1 & 2</p>
+                <p className="">Bachelor's in Early Learning Education</p>
                 <div className="">
                     Skills
                 </div>
@@ -48,8 +48,6 @@ function Teachers() {
                 subtitle="Teaching can be the best thing"
             />
             <div className="grid mt-8 grid-cols-1 md:grid-cols-3 gap-4 px-8">
-                <TeacherCard />
-                <TeacherCard />
                 <TeacherCard />
             </div>
         </div>

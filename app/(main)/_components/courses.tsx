@@ -36,8 +36,6 @@ function Courses() {
             />
             <div className="p-8 grid grid-cols-1 gap-6 md:grid-cols-3 ">
                 <CourseCard />
-                <CourseCard />
-                <CourseCard />
             </div>
         </div>
     )

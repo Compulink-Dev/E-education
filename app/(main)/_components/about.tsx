@@ -4,12 +4,12 @@ import { Bell, Flag, Users, Wifi } from 'lucide-react'
 import Image from 'next/image'
 
 
-const FactCard = () => {
+const FactCard = ({ title, value }: any) => {
     return (
         <div className="p-4 rounded flex flex-col border items-center justify-center gap-2">
             <Users className='text-2xl font-bold' />
-            <p className="font-bold text-lg text-blue-800">12</p>
-            <p className="">Teachers</p>
+            <p className="font-bold text-lg text-blue-800">{value}</p>
+            <p className="">{title}</p>
         </div>
     )
 }
@@ -23,7 +23,7 @@ const Card = () => {
             </div>
             <p className="text-blue-500 font-extrabold text-2xl">Clean Environment</p>
             <div className="">
-                <p className="text-center text-slate-500">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <p className="text-center text-slate-500">This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</p>
             </div>
         </div>
     )
@@ -42,8 +42,8 @@ function About() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-20 mt-6">
                 <Card />
-                <Card />
-                <Card />
+                {/* <Card />
+                <Card /> */}
             </div>
             {/* video section */}
             <div className="mt-8">
@@ -54,10 +54,12 @@ function About() {
                     />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-20 mt-6 items-center">
-                    <Image src={'/boy.jpg'} alt='' width={300} height={300} className='w-full rounded' />
+                    <video
+                        controls={true}
+                        src={'/exp.mp4'} width={300} height={300} className='w-full rounded' />
                     <div className="">
                         <p className="">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            E-education, or electronic education, uses digital technologies to facilitate teaching and learning processes. This approach encompasses various elements such as online classes, digital learning materials, and digital learning management systems, enhancing education’s accessibility and flexibility.
                         </p>
                         <div className="flex flex-col gap-4 items-start mt-4 ">
                             <div className="flex flex-row md:flex-row gap-2">
@@ -83,12 +85,12 @@ function About() {
                     subtitle="Description of our technology"
                 />
                 <div className="grid grid-cols-3 md:grid-cols-6 gap-4 px-20 mt-6">
-                    <FactCard />
-                    <FactCard />
-                    <FactCard />
-                    <FactCard />
-                    <FactCard />
-                    <FactCard />
+                    <FactCard title="Students" value={12} />
+                    <FactCard title="Teachers" value={18} />
+                    <FactCard title="Classes" value={21} />
+                    <FactCard title="Subjects" value={12} />
+                    <FactCard title="Courses" value={20} />
+                    <FactCard title="Students" value={24} />
                 </div>
             </div>
         </div>

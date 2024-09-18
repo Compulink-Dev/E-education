@@ -17,10 +17,10 @@ function Advantage() {
         <div>
             <Title
                 title="Advantages of the school"
-                subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod"
+                subtitle="Manage all your work stuff online under one platform"
             />
             <div className="px-8 mt-4">
-                <Card />
+                {/* <Card /> */}
             </div>
         </div>
     )
